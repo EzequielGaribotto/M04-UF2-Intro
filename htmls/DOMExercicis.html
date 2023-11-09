@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="./../styles/DOMExercicis.css">
         <title>Exercicis de paràgrafs de Document Object Model</title>
     </head>
-    <>
+    <body>
         <h1>EXERCICI 1</h1>
         <p id="text">Text a canviar amb JavaScript</p>
         <div>
@@ -19,10 +19,10 @@
             <input type="submit" value="Submit">
         </form>
         <h1>EXERCICI 3</h1>
-        <p>Paragrafo 1</p><br>
-        <p>Paragrafo 2</p><br>
-        <p>Paragrafo 3</p><br>
-        <p>Paragrafo 4</p><br>
+        <p class="p_red_bgcolor">Paragrafo 1</p><br>
+        <p class="p_red_bgcolor">Paragrafo 2</p><br>
+        <p class="p_red_bgcolor">Paragrafo 3</p><br>
+        <p class="p_red_bgcolor">Paragrafo 4</p><br>
         <div>
             <button id="backgrond_change" onclick="cambiarColorDeFondo()">CAMBIAR</button>
         </div>
@@ -55,9 +55,7 @@
         </table><br>
         <form id="formulari2">
             <input type="button" onclick="insertarFila('inicio','formulari2')" value="Inserta Fila al Principio">
-            <input type="text" class="input_usuario" name="numero" value="" placeholder="01234" autocomplete="off"></input>
-            <input type="text" class="input_usuario" name="numero" value="" placeholder="01234" autocomplete="off"></input><br>
-            <input type="button" onclick="insertarFila('final','formulari2')" value="Inserta Fila al Final">
+            <input type="button" onclick="insertarFila('final','formulari2')" value="Inserta Fila al Final"><br>
             <input type="text" class="input_usuario" name="numero" value="" placeholder="01234" autocomplete="off"></input>
             <input type="text" class="input_usuario" name="numero" value="" placeholder="01234" autocomplete="off"></input><br>
         </form>

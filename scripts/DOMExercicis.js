@@ -11,7 +11,7 @@ function prenValorForm() {
 }
 
 function cambiarColorDeFondo() {
-    let parrafos = document.getElementsByTagName("p")
+    let parrafos = document.getElementsByClassName("p_red_bgcolor")
     for (parrafo in parrafos) {
         parrafos[parrafo].style.backgroundColor = "red";
     }
