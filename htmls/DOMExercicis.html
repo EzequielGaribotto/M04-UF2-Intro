@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="./../styles/DOMExercicis.css">
         <title>Exercicis de paràgrafs de Document Object Model</title>
     </head>
-    <body>
+    <>
         <h1>EXERCICI 1</h1>
         <p id="text">Text a canviar amb JavaScript</p>
         <div>
@@ -27,7 +27,6 @@
             <button id="backgrond_change" onclick="cambiarColorDeFondo()">CAMBIAR</button>
         </div>
         <h1>EXERCICI 4</h1>
-        <body>
             <p><a id="itb" type="text/html" hreflang="ca" rel="nofollow" target="_self" href="https://www.itb.cat/">ITB</a></p>
             <button onclick="obtenirAtributs()">Clica aqui per obtenir els atributs</button>
         <h1>EXERCICI 5</h1>
@@ -41,7 +40,76 @@
                 <td>Fila 2 cel·la 2</td>
             </tr>
         </table><br>
-        <input type="button" onclick="insertarFila('inicio')" value="Inserta Fila al Principio">
-        <input type="button" onclick="insertarFila('final')" value="Inserta Fila al Final">
+        <input type="button" onclick="insertarFila('inicio','formulari1')" value="Inserta Fila al Principio">
+        <input type="button" onclick="insertarFila('final','formulari1')" value="Inserta Fila al Final">
+        <h1>EXERCICI 6</h1>
+        <table id="Taula2" border="1">
+            <tr>
+                <td>fila 1 cel·la 1</td>
+                <td>fila 1 cel·la 2</td>
+            </tr>
+            <tr>
+                <td>Fila 2 cel·la 1</td>
+                <td>Fila 2 cel·la 2</td>
+            </tr>
+        </table><br>
+        <form id="formulari2">
+            <input type="button" onclick="insertarFila('inicio','formulari2')" value="Inserta Fila al Principio">
+            <input type="text" class="input_usuario" name="numero" value="" placeholder="01234" autocomplete="off"></input>
+            <input type="text" class="input_usuario" name="numero" value="" placeholder="01234" autocomplete="off"></input><br>
+            <input type="button" onclick="insertarFila('final','formulari2')" value="Inserta Fila al Final">
+            <input type="text" class="input_usuario" name="numero" value="" placeholder="01234" autocomplete="off"></input>
+            <input type="text" class="input_usuario" name="numero" value="" placeholder="01234" autocomplete="off"></input><br>
+        </form>
+        <h1>EXERCICI 7</h1>
+        <form id="formulari3" action="javascript: crearTabla()">
+            <fieldset>
+                <table id="tabla_padre"></table>
+                <input type="submit" value="Crear Tabla">
+                <input type="text" id="filas" name="numero" value="" placeholder="01234" autocomplete="off"></input>
+                <input type="text" id="columnas" name="numero" value="" placeholder="01234" autocomplete="off"></input><br>
+            </fieldset>
+        </form>
+        <h1>EXERCICI 8</h1>
+        <h2>Selecciona una opción:</h2>
+
+        <select id="dropDownRemove">
+            <option value="opcion1">patates</option>
+            <option value="opcion2">pilotes</option>
+            <option value="opcion3">croquetas</option>
+            <!-- Añade más opciones según sea necesario -->
+        </select>
+    
+        <button onclick="eliminarSeleccion()">Eliminar Selección</button>
+        <h1>EXERCICI 9</h1>
+        <h2>Selecciona una opción:</h2>
+
+        <select>
+            <option class="opc_show" value="opcion1">patates</option>
+            <option class="opc_show" value="opcion2">pilotes</option>
+            <option class="opc_show" value="opcion3">croquetas</option>
+            <!-- Añade más opciones según sea necesario -->
+        </select>
+    
+        <button onclick="mostrarSeleccion()">Mostrar Selección</button>
+        <h1>EXERCICI 10</h1>
+        <h1>Calculadora de Volumen de Cilindro</h1>
+
+        <form id="cilindroForm">
+            <label for="altura">Altura del cilindro:</label>
+            <input type="number" id="altura" required>
+    
+            <label for="radio">Radio del cilindro:</label>
+            <input type="number" id="radio" required>
+    
+            <button type="button" onclick="calcularVolumen()">Calcular Volumen</button>
+        </form>
+    
+        <p id="resultado"></p>
+        <h1 id="ex11">EXERCICI 11</h1>
+        <p><a href="#ex11" onmouseover="resaltar()" onmouseout="tornaNormal()">Si posses el ratolí aquí sobre, algunes paraules s'han de ressaltar</a></p>
+        <p><strong>L'ITB</strong> encoratja a <strong>tots els estudiants</strong> a seguir esforçant-se per una societat
+            <strong>millor</strong> i més <strong>digitalitzada</strong>.
+        </p>
     </body>
 </html>
